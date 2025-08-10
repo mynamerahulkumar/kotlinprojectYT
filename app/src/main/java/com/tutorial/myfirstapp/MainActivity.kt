@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyfirstAppTheme {
+                // surface to fill the max size
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Android AI",
@@ -30,6 +31,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+// composable to see on screen
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
